@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cairo:wght@600&family=Hind:wght@500&family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Fjalla+One&family=Lato&family=Play&family=Red+Rose&display=swap');
+
+
+body {
+  background: url(./images/coffee-apple.jpg) no-repeat center center fixed;
+  -webkit-background: cover;
+  -moz-background: cover;
+  -o-background: cover;
+  background: cover;
+  height: 100%;
+  overflow: hidden;
+}
