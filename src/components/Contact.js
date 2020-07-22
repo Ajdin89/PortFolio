@@ -82,6 +82,17 @@ const Contact = () => {
 						margin='dense'
 						size='medium'
 					/>
+					<InputField 
+						id="outlined-textarea"
+					fullWidth={true}
+						label="Message"
+						multiline
+						rows={5}
+						inputProps={{ style: { color: '#fff' } }}
+						variant="outlined"
+						margin="dense"
+					>
+					</InputField>
 					<Button
 						className={classes.button}
 						variant='outlined'
