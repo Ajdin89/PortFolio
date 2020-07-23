@@ -17,8 +17,8 @@ import {
 } from '@material-ui/core';
 import { AssignmentInd, Home, Apps, ContactMail } from '@material-ui/icons';
 import MenuIcon from '@material-ui/icons/Menu';
-import photo from '../images/ajdin-photo.jpg'
-import Footer from '../components/Footer'
+import photo from '../images/ajdin-photo.jpg';
+import Footer from '../components/Footer';
 
 /* CUSTOM CSS STYLES */
 const useStyles = makeStyles((theme) => ({
@@ -71,16 +71,19 @@ const Navbar = () => {
 		right: false,
 	});
 
-	/* Helper method */
-	const toggleslider = (slider, open) => () => {
+	const toggleSlider = (slider, open) => () => {
 		setState({ ...state, [slider]: open });
 	};
 
 	const classes = useStyles();
 
-/* SIDEBAR */
+	/* SIDEBAR */
 	const sideList = (slider) => (
-		<Box className={classes.menuSliderContainer} component='div'>
+		<Box
+			component='div'
+			className={classes.menuSliderContainer}
+			onClick={toggleSlider(slider, false)}
+		>
 			<Avatar className={classes.avatar} src={photo} alt='Ajdin Kmetas' />
 			<Divider />
 			<List>
@@ -105,7 +108,7 @@ const Navbar = () => {
 				<AppBar position='static' style={{ background: '#222' }}>
 					<Toolbar>
 						<IconButton
-							onClick={toggleslider('right', true)}
+							onClick={toggleSlider('right', true)}
 							edge='start'
 							className={classes.menuButton}
 							aria-label='menu'
@@ -121,10 +124,10 @@ const Navbar = () => {
 						<MobilMenuSlider
 							anchor='right'
 							open={state.right}
-							onClose={toggleslider('right', false)}
+							onClose={toggleSlider('right', false)}
 						>
 							{sideList('right')}
-						<Footer/>
+							<Footer />
 						</MobilMenuSlider>
 					</Toolbar>
 				</AppBar>

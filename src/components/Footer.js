@@ -1,6 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
-import { BottomNavigation, BottomNavigationAction } from '@material-ui/core';
+import {
+	BottomNavigation,
+	BottomNavigationAction,
+	Typography,
+	Box,
+} from '@material-ui/core';
 import Facebook from '@material-ui/icons/Facebook';
 import Instagram from '@material-ui/icons/Instagram';
 import LinkedIn from '@material-ui/icons/LinkedIn';
@@ -19,6 +24,12 @@ const useStyles = makeStyles({
 				fontSize: '1.8rem',
 			},
 		},
+	},
+	text: {
+		background: '#222',
+		color: 'tan',
+		textAlign: 'center',
+		paddingBottom: '0.5rem',
 	},
 });
 
@@ -49,6 +60,13 @@ const Footer = () => {
 					target='_blank'
 				/>
 			</BottomNavigation>
+			<Box component='div' className={classes.text}>
+				<Typography variant='body1'>ajdinkmetas@outlook.com</Typography>
+				<Typography variant='body1'>+387 61 620 138</Typography>
+				<Typography variant='body1' style={{ fontSize: '0.65rem' }}>
+					&copy; 2020 Ajdin Kmetas
+				</Typography>
+			</Box>
 		</div>
 	);
 };
