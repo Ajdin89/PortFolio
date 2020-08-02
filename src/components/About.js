@@ -22,9 +22,21 @@ const useStyle = makeStyles((theme) => ({
 		color: 'tomato',
 		fontSize: '2.75rem',
 		textAlign: 'center',
-		padding: '1.3rem 0',
+		padding: '1.8rem 1rem 0.6rem',
 		fontFamily: 'Play',
 	},
+
+	layout: {
+		position: 'absolute',
+		top: '50%',
+		left: '50%',
+		transform: 'translate(-50%, -41%)',
+		textAlign: 'center',
+		width: '100%',
+		height: '100vh',
+		overflow: 'auto',
+	},
+
 	gridItem: {
 		display: 'flex',
 		justifyContent: 'center',
@@ -38,7 +50,7 @@ const useStyle = makeStyles((theme) => ({
 		color: 'tan',
 		textAlign: 'center',
 		fontFamily: 'Source Code Pro',
-		paddingBottom: '0.6rem',
+		marginBottom: '0.6rem',
 	},
 	media: {
 		width: theme.spacing(10),
@@ -51,18 +63,11 @@ const About = () => {
 	return (
 		<>
 			<Navbar />
-			<Box
-				component='div'
-				style={{
-					height: '100vh',
-					width: '100%',
-					overflowX: 'hidden',
-				}}
-			>
-				<Typography className={classes.heading}>
-					Technology Stack
-				</Typography>
-				<Grid container spacing={1} style={{ margin: 'auto' }}>
+			<Box component='div' className={classes.layout}>
+				<Grid container justify='center' spacing={2}>
+					<Grid item xs={12}>
+						<Typography className={classes.heading}>Tech Stack</Typography>
+					</Grid>
 					<Grid item xs={6} md={3} className={classes.gridItem}>
 						<Box component='div' className={classes.box}>
 							<Typography variant='h5' className={classes.title}>

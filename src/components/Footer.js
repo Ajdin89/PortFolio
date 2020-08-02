@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 		background: '#222',
 		color: 'tan',
 		textAlign: 'center',
-		paddingBottom: '0.5rem',
+		padding: '0.4rem 0',
 	},
 });
 
@@ -61,7 +61,7 @@ const Footer = () => {
 				/>
 			</BottomNavigation>
 			<Box component='div' className={classes.text}>
-				<Typography variant='body1'>ajdinkmetas@outlook.com</Typography>
+				<Typography variant='body1' style={{fontSize: '1.1rem'}}>ajdinkmetas@outlook.com</Typography>
 				<Typography variant='body1'>+387 61 620 138</Typography>
 				<Typography variant='body1' style={{ fontSize: '0.65rem' }}>
 					&copy; 2020 Ajdin Kmetas

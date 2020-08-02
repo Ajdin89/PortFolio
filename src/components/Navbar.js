@@ -51,7 +51,7 @@ const menuItems = [
 	},
 	{
 		listIcon: <AssignmentInd />,
-		listText: 'About',
+		listText: 'Skills',
 		listPath: '/about',
 	},
 	{
