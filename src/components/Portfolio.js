@@ -77,7 +77,7 @@ const Projects = () => {
 							<CardActionArea>
 								<CardMedia
 									component='img'
-									alt='Form Validation'
+									alt='architect webpage'
 									height='160'
 									image={architect}
 									title='Landing page'
