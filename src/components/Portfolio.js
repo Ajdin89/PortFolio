@@ -12,7 +12,7 @@ import {
 	CardContent,
 	CardMedia,
 } from '@material-ui/core';
-import form from '../images/projects/form.png';
+import architect from '../images/projects/architect.png';
 import youtube from '../images/projects/youtube.png';
 import unsplash from '../images/projects/unsplash.png';
 import Navbar from './Navbar';
@@ -72,16 +72,16 @@ const Projects = () => {
 					align='center'
 					style={{ padding: '1.5rem' }}
 				>
-					<Grid item xs={12} sm={4}>
+					<Grid item xs={12} md={4}>
 						<Card className={classes.root}>
 							<CardActionArea>
 								<CardMedia
 									component='img'
 									alt='Form Validation'
 									height='160'
-									image={form}
-									title='Form Validation'
-									href='https://form-validationapp.netlify.app/'
+									image={architect}
+									title='Landing page'
+									href='https://architect-web.netlify.app/'
 									target='_blank'
 									className={classes.cardMedia}
 								/>
@@ -92,18 +92,17 @@ const Projects = () => {
 										component='h2'
 										className={classes.cardHeader}
 									>
-										Form Validation
+										Landing Page
 									</Typography>
 									<Typography
 										component='p'
 										variant='body2'
 										className={classes.cardText}
 									>
-										Simple and beautiful one-page form validation where you fill
-										the input field based on a condition. HTML5 and CSS3 are
-										used for the layout. All functionality and logic is written
-										in Vanilla JavaScript, without any framework just using
-										JavaScript DOM manipulations.
+										Simple and beautiful one-page website created using
+										HTML5 for markup and CSS3 for styling with SaaS preprocessor. 
+										Functionality and logic are written in Vanilla JavaScript, 
+										without any framework just using JavaScript DOM manipulations.
 									</Typography>
 								</CardContent>
 							</CardActionArea>
@@ -112,7 +111,7 @@ const Projects = () => {
 									variant='contained'
 									size='small'
 									startIcon={<GitHubIcon />}
-									href='https://github.com/Ajdin89/Form-Validation'
+									href='https://github.com/Ajdin89/architect-website'
 									target='_blank'
 								>
 									Source code
@@ -121,7 +120,7 @@ const Projects = () => {
 									variant='contained'
 									color='secondary'
 									size='small'
-									href='https://form-validationapp.netlify.app/'
+									href='https://architect-web.netlify.app/'
 									target='_blank'
 								>
 									Visit live
@@ -130,7 +129,7 @@ const Projects = () => {
 						</Card>
 					</Grid>
 
-					<Grid item xs={12} sm={4}>
+					<Grid item xs={12} md={4}>
 						<Card className={classes.root}>
 							<CardActionArea>
 								<CardMedia
@@ -148,7 +147,7 @@ const Projects = () => {
 										component='h2'
 										className={classes.cardHeader}
 									>
-										Unsplash Image Layout
+										Photo Search App
 									</Typography>
 									<Typography
 										component='p'
@@ -186,7 +185,7 @@ const Projects = () => {
 						</Card>
 					</Grid>
 
-					<Grid item xs={12} sm={4}>
+					<Grid item xs={12} md={4}>
 						<Card className={classes.root}>
 							<CardActionArea>
 								<CardMedia

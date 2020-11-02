@@ -17,6 +17,7 @@ const useStyle = makeStyles((theme) => ({
 		padding: theme.spacing(3.8),
 		textAlign: 'center',
 		borderRadius: '50%',
+		boxShadow: '0 0.4rem 0.7rem rgba(0,0,0,0.7)'
 	},
 	heading: {
 		color: 'tomato',
@@ -25,7 +26,6 @@ const useStyle = makeStyles((theme) => ({
 		padding: '1.8rem 1rem 0.6rem',
 		fontFamily: 'Play',
 	},
-
 	layout: {
 		position: 'absolute',
 		top: '50%',
@@ -36,7 +36,6 @@ const useStyle = makeStyles((theme) => ({
 		height: '100vh',
 		overflow: 'auto',
 	},
-
 	gridItem: {
 		display: 'flex',
 		justifyContent: 'center',
