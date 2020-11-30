@@ -12,9 +12,9 @@ import {
 	CardContent,
 	CardMedia,
 } from '@material-ui/core';
-import architect from '../images/projects/architect.png';
-import youtube from '../images/projects/youtube.png';
-import unsplash from '../images/projects/unsplash.png';
+import landing from '../images/projects/landing-page.gif';
+import photo from '../images/projects/photo-app.gif';
+import movie from '../images/projects/movie-app.gif';
 import Navbar from './Navbar';
 
 /* CUSTOM CSS STYLING */
@@ -41,11 +41,8 @@ const useStyles = makeStyles({
 		padding: '1.4rem 1rem 0.5rem',
 	},
 	cardMedia: {
-		opacity: '0.45',
-		'&:hover': {
-			opacity: '0.9',
-			transform: 'scale(1.1)',
-		},
+		opacity: '0.9',
+		textAlign: 'justify',
 	},
 	cardHeader: {
 		fontFamily: 'Cairo',
@@ -79,7 +76,7 @@ const Projects = () => {
 									component='img'
 									alt='architect webpage'
 									height='160'
-									image={architect}
+									image={landing}
 									title='Landing page'
 									href='https://architect-web.netlify.app/'
 									target='_blank'
@@ -99,10 +96,11 @@ const Projects = () => {
 										variant='body2'
 										className={classes.cardText}
 									>
-										Simple and beautiful one-page website created using
-										HTML5 for markup and CSS3 for styling with SaaS preprocessor. 
-										Functionality and logic are written in Vanilla JavaScript, 
-										without any framework just using JavaScript DOM manipulations.
+										Simple and beautiful one-page website created using HTML5
+										for markup and CSS3 for styling with Sass preprocessor.
+										Functionality and logic are written in Vanilla JavaScript,
+										without any framework just using JavaScript DOM
+										manipulations.
 									</Typography>
 								</CardContent>
 							</CardActionArea>
@@ -123,7 +121,7 @@ const Projects = () => {
 									href='https://architect-web.netlify.app/'
 									target='_blank'
 								>
-									Visit live
+									Live Preview
 								</Button>
 							</CardActions>
 						</Card>
@@ -136,7 +134,7 @@ const Projects = () => {
 									component='img'
 									alt='Unsplash images'
 									height='160'
-									image={unsplash}
+									image={photo}
 									title='Unsplash Images'
 									className={classes.cardMedia}
 								/>
@@ -154,11 +152,11 @@ const Projects = () => {
 										variant='body2'
 										className={classes.cardText}
 									>
-										Web application created using React. 
-										For fetching data is used Unsplash API key. Content is divided in two main sections. 
-										At the top is a search bar input field. In the center you can see pics in grid layout
-										based on terminology you searched about it. 
-										
+										Web application created using React. For fetching data is
+										used Unsplash API key. Content is divided in two main
+										sections. At the top is a search bar input field. In the
+										center you can see pics in grid layout based on terminology
+										you searched about it.
 									</Typography>
 								</CardContent>
 							</CardActionArea>
@@ -179,7 +177,7 @@ const Projects = () => {
 									href='https://app-unsplashimages.netlify.app/'
 									target='_blank'
 								>
-									Visit live
+									Live Preview
 								</Button>
 							</CardActions>
 						</Card>
@@ -192,7 +190,7 @@ const Projects = () => {
 									component='img'
 									alt='YouTube clone'
 									height='160'
-									image={youtube}
+									image={movie}
 									title='YouTube clone'
 									className={classes.cardMedia}
 								/>
@@ -203,18 +201,18 @@ const Projects = () => {
 										component='h2'
 										className={classes.cardHeader}
 									>
-										YouTube Clone
+										Movie App
 									</Typography>
 									<Typography
 										component='p'
 										variant='body2'
 										className={classes.cardText}
 									>
-										A one-page Website made in React. For fetching data is used
-										YouTube API key. It is divided into several sections. At the
-										top is a search bar input field. In the center is the video
-										currently playing and information about it. On the side is
-										the next video playing list.
+										Web app created using React/Typescript, ReactHooks, Router,
+										and ContextAPI for state consumption. Searching are based on
+										the term. The search is performed only when there are 3 or
+										more characters in the search bar. For fetching data is used
+										TheMovieDB API.
 									</Typography>
 								</CardContent>
 							</CardActionArea>
@@ -232,10 +230,10 @@ const Projects = () => {
 									variant='contained'
 									color='secondary'
 									size='small'
-									href='https://app-youtubeclone.netlify.app/'
+									href='https://myreact-movie-app.netlify.app/'
 									target='_blank'
 								>
-									Visit live
+									Live Preview
 								</Button>
 							</CardActions>
 						</Card>
