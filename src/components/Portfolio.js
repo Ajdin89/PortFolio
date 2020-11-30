@@ -209,7 +209,7 @@ const Projects = () => {
 										className={classes.cardText}
 									>
 										Web app created using React/Typescript, ReactHooks, Router,
-										and ContextAPI for state consumption. Searching are based on
+										and ContextAPI for state consumption. Search is based on
 										the term. The search is performed only when there are 3 or
 										more characters in the search bar. For fetching data is used
 										TheMovieDB API.
