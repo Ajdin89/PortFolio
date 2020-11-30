@@ -165,7 +165,7 @@ const Projects = () => {
 									variant='contained'
 									size='small'
 									startIcon={<GitHubIcon />}
-									href='https://github.com/Ajdin89/UnsplashImageLayout'
+									href='https://github.com/Ajdin89/PhotoSearchApp'
 									target='_blank'
 								>
 									Source code
@@ -221,7 +221,7 @@ const Projects = () => {
 									variant='contained'
 									size='small'
 									startIcon={<GitHubIcon />}
-									href='https://github.com/Ajdin89/YouTube-Clone'
+									href='https://github.com/Ajdin89/ReactMovieApp'
 									target='_blank'
 								>
 									Source code
