@@ -33,6 +33,8 @@ const useStyles = makeStyles((theme) => ({
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
 		position: 'absolute',
+		width: '100%',
+		padding: '0 25px'
 	},
 	button: {
 		marginTop: '1rem',
@@ -49,7 +51,7 @@ const Contact = () => {
 			<Grid container justify='center'>
 				<Box component='form' className={classes.form}>
 					<Typography
-						variant0='h5'
+						variant='h5'
 						style={{
 							color: 'tomato',
 							textAlign: 'center',
@@ -82,17 +84,16 @@ const Contact = () => {
 						margin='dense'
 						size='medium'
 					/>
-					<InputField 
-						id="outlined-textarea"
-					fullWidth={true}
-						label="Message"
+					<InputField
+						id='outlined-textarea'
+						fullWidth={true}
+						label='Message'
 						multiline
 						rows={5}
 						inputProps={{ style: { color: '#fff' } }}
-						variant="outlined"
-						margin="dense"
-					>
-					</InputField>
+						variant='outlined'
+						margin='dense'
+					></InputField>
 					<Button
 						className={classes.button}
 						variant='outlined'
