@@ -17,7 +17,8 @@ const useStyle = makeStyles((theme) => ({
 		padding: theme.spacing(3.8),
 		textAlign: 'center',
 		borderRadius: '50%',
-		boxShadow: '0 0.4rem 0.7rem rgba(0,0,0,0.7)'
+		boxShadow: '0 0.4rem 0.7rem rgba(0,0,0,0.7)',
+		opacity: 0.9
 	},
 	heading: {
 		color: 'tomato',

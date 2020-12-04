@@ -33,8 +33,6 @@ const useStyles = makeStyles((theme) => ({
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
 		position: 'absolute',
-		width: '100%',
-		padding: '0 25px'
 	},
 	button: {
 		marginTop: '1rem',
@@ -51,7 +49,7 @@ const Contact = () => {
 			<Grid container justify='center'>
 				<Box component='form' className={classes.form}>
 					<Typography
-						variant='h5'
+						variant0='h5'
 						style={{
 							color: 'tomato',
 							textAlign: 'center',
